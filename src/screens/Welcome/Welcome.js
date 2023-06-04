@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: Colors.GREEN,
-    fontFamily: Fonts.NotoSeri,
+    fontFamily: Fonts.NOTOSERI,
     fontSize: Fonts.LARGE,
     marginTop: 20,
   },

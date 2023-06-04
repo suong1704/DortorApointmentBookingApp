@@ -3,7 +3,7 @@ import {Colors, Fonts} from '../../constants';
 
 export const styles = StyleSheet.create({
   spaceBottom: {
-    marginBottom: 30,
+    marginBottom: 20,
   },
   main: {
     flex: 1,
@@ -11,24 +11,19 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: 25,
+    padding: 20,
     backgroundColor: Colors.WHITE,
   },
   top: {
     alignItems: 'center',
-    marginBottom: 30,
   },
-  login: {
+  register: {
     fontSize: Fonts.LARGE,
     color: Colors.GREEN,
     fontFamily: Fonts.POPPINS_BOLD,
-    marginVertical: 20,
   },
-  welcome: {
-    fontFamily: Fonts.POPPINS_REGULAR,
-    fontSize: Fonts.MEDIUM,
-    maxWidth: '80%',
-    textAlign: 'center',
+  text: {
+    marginVertical: 10,
   },
   wrapperInput: {
     flexDirection: 'row',
@@ -44,6 +39,10 @@ export const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     color: 'red',
   },
+  check: {
+    marginRight: 5,
+    alignSelf: 'flex-end',
+  },
   other: {
     flex: 1,
     flexDirection: 'column',
@@ -57,7 +56,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: Fonts.SMALL,
   },
-  iconGroup: {
+  icon: {
     marginTop: 10,
     flexDirection: 'row',
     justifyContent: 'center',
