@@ -18,12 +18,12 @@ export const styles = StyleSheet.create({
   },
   name: {
     fontFamily: Fonts.POPPINS_BOLD,
-    color: Colors.GREEN,
+    color: Colors.DEFAULT_CORLOR,
     fontSize: Fonts.SMALL,
   },
   department: {
     fontFamily: Fonts.POPPINS_LIGHT,
-    color: Colors.GREEN,
+    color: Colors.DEFAULT_CORLOR,
     fontSize: Fonts.SMALL,
   },
 });

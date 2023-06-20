@@ -18,7 +18,7 @@ const Avatar = ({
       width: size,
       height: size,
       borderRadius: borderRadius,
-      borderColor: Colors.GREEN,
+      borderColor: Colors.DEFAULT_CORLOR,
       borderWidth: 1,
       overflow: 'hidden',
     },

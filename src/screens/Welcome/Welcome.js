@@ -22,14 +22,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: Colors.LIGHT_GREEN,
+    backgroundColor: Colors.DEFAULT_LIGHT_CORLOR,
   },
   logo: {
     width: 200,
     height: 200,
   },
   title: {
-    color: Colors.GREEN,
+    color: Colors.DEFAULT_CORLOR,
     fontFamily: Fonts.NOTOSERI,
     fontSize: Fonts.LARGE,
     marginTop: 20,

@@ -3,9 +3,10 @@ import AppHeader from '../../components/AppHeader/AppHeader';
 import {Colors} from '../../constants';
 import {View} from 'react-native';
 import {Dropdown} from 'react-native-element-dropdown';
-import {styles} from './Doctor.styles';
+import {styles} from './Speciality.styles';
+import MyTextInput from '../../components/MyTextInput';
 
-const departments = [
+const specialities = [
   {
     _id: '647ee9e5aee1ff0c2b4ded18',
     name: 'Đa khoa',
@@ -37,45 +38,36 @@ const departments = [
     __v: 0,
   },
 ];
-const Doctor = () => {
-  const [isFocus, setIsFocus] = useState(false);
+
+const Speciality = () => {
   const [speciality, setSpeciality] = useState(false);
-  const handleGetSpeciality = () => {};
+  const handleSearch = e => {
+    
+  };
   return (
     <Fragment>
       <AppHeader
         back
-        title={'Bác Sỹ'}
-        right={'bell'}
+        title={'Khoa'}
         headerBg={Colors.DEFAULT_CORLOR}
         iconColor={Colors.WHITE}
       />
-      <View style={{backgroundColor: '#fff', padding: 20, borderRadius: 15}}>
-        <Dropdown
-          style={[styles.dropdown, isFocus && {borderColor: 'blue'}]}
-          placeholderStyle={styles.placeholderStyle}
-          selectedTextStyle={styles.selectedTextStyle}
-          inputSearchStyle={styles.inputSearchStyle}
-          iconStyle={styles.iconStyle}
-          data={departments}
-          search
-          maxHeight={300}
-          labelField="label"
-          valueField="value"
-          placeholder={!isFocus ? 'Chọn Khoa' : '...'}
-          searchPlaceholder="Tìm kiếm..."
+      <View
+        style={{
+          backgroundColor: '#fff',
+          padding: 20,
+          borderRadius: 15,
+          marginTop: 20,
+        }}>
+        <MyTextInput
+          placeholder="Search..."
+          keyboardType="text"
           value={speciality}
-          onFocus={() => setIsFocus(true)}
-          onBlur={() => setIsFocus(false)}
-          onChange={item => {
-            setIsFocus(false);
-            setSpeciality(item.name);
-            handleGetSpeciality(item);
-          }}
+          onChangeText={e => handleSearch(e)}
         />
       </View>
     </Fragment>
   );
 };
 
-export default Doctor;
+export default Speciality;

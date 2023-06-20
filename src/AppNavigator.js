@@ -12,6 +12,7 @@ import Pharmacy from './screens/Pharmacy/Pharmacy';
 import Welcome from './screens/Welcome/Welcome';
 import Doctor from './screens/Doctor/Doctor';
 import DoctorDetail from './screens/DoctorDetail/DoctorDetail';
+import Speciality from './screens/Speciality/Speciality';
 
 const Stack = createStackNavigator();
 
@@ -37,6 +38,11 @@ const AppNavigator = () => {
         <Stack.Screen
           component={Home}
           name="Home"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={Speciality}
+          name="Speciality"
           options={{headerShown: false}}
         />
         <Stack.Screen

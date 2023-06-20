@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
   container: {
     height: 130,
     borderRadius: 12,
-    backgroundColor: Colors.GREEN,
+    backgroundColor: Colors.DEFAULT_CORLOR,
   },
   top: {
     flex: 2,
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     borderBottomWidth: 0.5,
-    borderBottomColor: Colors.LIGHT_GREEN,
+    borderBottomColor: Colors.DEFAULT_LIGHT_CORLOR,
   },
   doctorInfo: {
     flexDirection: 'row',

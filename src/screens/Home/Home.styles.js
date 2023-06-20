@@ -53,6 +53,6 @@ export const styles = StyleSheet.create({
   colorText: {
     fontFamily: Fonts.POPPINS_BOLD,
     fontSize: Fonts.MEDIUM,
-    color: Colors.GREEN,
+    color: Colors.DEFAULT_CORLOR,
   },
 });

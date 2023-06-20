@@ -13,22 +13,34 @@ import DoctorItem from '../../components/DoctorItem/DoctorItem';
 
 const categories = [
   {
-    icon: <FontistoIcon name={'doctor'} size={24} color={Colors.GREEN} />,
+    icon: (
+      <FontistoIcon name={'doctor'} size={24} color={Colors.DEFAULT_CORLOR} />
+    ),
     name: 'Bác sỹ',
     to: 'Doctor',
   },
   {
-    icon: <AntDesignIcon name={'adduser'} size={24} color={Colors.GREEN} />,
+    icon: (
+      <AntDesignIcon name={'adduser'} size={24} color={Colors.DEFAULT_CORLOR} />
+    ),
     name: 'Lịch khám',
     to: 'Appointment',
   },
   {
-    icon: <FontAwesome5Icon name={'capsules'} size={24} color={Colors.GREEN} />,
+    icon: (
+      <FontAwesome5Icon
+        name={'capsules'}
+        size={24}
+        color={Colors.DEFAULT_CORLOR}
+      />
+    ),
     name: 'Đơn thuốc',
     to: 'Pharmacy',
   },
   {
-    icon: <FontAwesomeIcon name={'user'} size={24} color={Colors.GREEN} />,
+    icon: (
+      <FontAwesomeIcon name={'user'} size={24} color={Colors.DEFAULT_CORLOR} />
+    ),
     name: 'Cá nhân',
     to: 'Profile',
   },
@@ -115,7 +127,9 @@ const Home = ({navigation: {navigate}}) => {
                 width={70}
                 height={70}
                 borderRadius={35}
-                onPress={() => navigate(category.to)}
+                onPress={() => {
+                  navigate(category.to);
+                }}
               />
               <Text>{category.name}</Text>
             </View>

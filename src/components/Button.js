@@ -59,9 +59,9 @@ const styles = StyleSheet.create({
   },
   primary: {
     padding: 10,
-    backgroundColor: Colors.GREEN,
+    backgroundColor: Colors.DEFAULT_CORLOR,
     borderRadius: 10,
-    shadowColor: Colors.GREEN,
+    shadowColor: Colors.DEFAULT_CORLOR,
     shadowOffset: {
       width: 0,
       height: 10,
@@ -88,11 +88,11 @@ const styles = StyleSheet.create({
   icon: {
     padding: 8,
     marginHorizontal: 10,
-    backgroundColor: Colors.LIGHT_GREEN,
+    backgroundColor: Colors.DEFAULT_LIGHT_CORLOR,
     height: 40,
     width: 40,
     borderRadius: 20,
-    borderColor: Colors.GREEN,
+    borderColor: Colors.DEFAULT_CORLOR,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
